@@ -22,7 +22,7 @@ $(function () {
       $('.header__inner').toggleClass('active-menu');
      });
 
-     $('.header__menu-item').on('click', function(){
+     $('.header__menu-item, .header__cross-menu ').on('click', function(){
       $('.header__inner').removeClass('active-menu');
      });
      
@@ -170,6 +170,7 @@ window.onscroll = magic
 
 $(function() {  
    $("body").niceScroll({
-      mousescrollstep: 10,
+      mousescrollstep: 20,
+      zindex: "1"
    });
 });
